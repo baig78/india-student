@@ -31,13 +31,12 @@
 }
 
 .nav-links a:hover {
-  color: #5CAD34;
-
+  color: #5cad34;
 }
 
 .contact-btn {
   padding: 0.625rem 1.25rem;
-  background-color: #5CAD34;
+  background-color: #5cad34;
   color: #fff;
   border: none;
   border-radius: 0.3125rem;
@@ -52,7 +51,7 @@
   display: none;
   font-size: 1.875rem;
   cursor: pointer;
-  color: #5CAD34;
+  color: #5cad34;
 }
 
 .nav-links-mobile {
@@ -82,27 +81,22 @@
     gap: 1.25rem;
   }
 
-  .nav-links-mobile a{
-  /* .nav-links-mobile .contact-btn { */
+  .nav-links-mobile a {
+    /* .nav-links-mobile .contact-btn { */
     color: #111;
     font-size: 1.25rem;
     text-decoration: none;
   }
 
-  .nav-links-mobile a:hover{
-    color: #5CAD34;
-
+  .nav-links-mobile a:hover {
+    color: #5cad34;
   }
 
   .nav-links-mobile .contact-btn {
     color: #fff;
     font-size: 1.25rem;
     text-decoration: none;
-
-
   }
-
-
 
   /* .nav-links-mobile a,
   .nav-links-mobile .contact-btn:hover {

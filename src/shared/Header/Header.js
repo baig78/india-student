@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import './Header.css'; // Import the CSS file
+import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import "./Header.css"; // Import the CSS file
 
 const Header = () => {
   const [isMobile, setIsMobile] = useState(false);

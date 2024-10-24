@@ -1,0 +1,108 @@
+.footer {
+  background-color: #111;
+  color: white;
+  padding: 4rem 7rem;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-section h3 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.footer-section p,
+.footer-section a {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.social-icons a {
+  margin: 0 0.5rem;
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #5cad34;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 1rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.footer-section ul li a {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  position: relative;
+  /* To control positioning of the ::after pseudo-element */
+  padding-bottom: 0.1rem;
+}
+
+.footer-section ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #5cad34;
+  /* Line color */
+  transition: width 0.3s ease-in-out;
+}
+
+.footer-section ul li a:hover::after {
+  width: 100%;
+  /* Expands the line to full width on hover */
+}
+
+.footer-section ul li a:hover {
+  color: #5cad34;
+  /* Optional hover text color change */
+}
+
+/* Responsive Design */
+@media (max-width: 48rem) {
+  /* 768px in rem */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+}
