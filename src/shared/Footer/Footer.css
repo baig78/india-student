@@ -67,8 +67,7 @@
   color: white;
   font-size: 1rem;
   text-decoration: none;
-  position: relative;
-  /* To control positioning of the ::after pseudo-element */
+  position: relative; /* To control positioning of the ::after pseudo-element */
   padding-bottom: 0.1rem;
 }
 
@@ -79,19 +78,16 @@
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: #5cad34;
-  /* Line color */
+  background-color: #5cad34; /* Line color */
   transition: width 0.3s ease-in-out;
 }
 
 .footer-section ul li a:hover::after {
-  width: 100%;
-  /* Expands the line to full width on hover */
+  width: 100%; /* Expands the line to full width on hover */
 }
 
 .footer-section ul li a:hover {
-  color: #5cad34;
-  /* Optional hover text color change */
+  color: #5cad34; /* Optional hover text color change */
 }
 
 /* Responsive Design */

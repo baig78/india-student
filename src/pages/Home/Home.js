@@ -16,7 +16,6 @@ const Home = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
             vulputate justo at magna tincidunt, nec interdum eros pulvinar. Nam
             aliquam libero et metus vulputate, id interdum orci pellentesque.
-            test test test test
           </p>
         </div>
         <div className="section-image">
