@@ -1,5 +1,5 @@
-import React from 'react'
-import './Home.css'
+import React from "react";
+import "./Home.css";
 
 const Home = () => {
   return (
@@ -13,10 +13,9 @@ const Home = () => {
             aliquam libero et metus vulputate, id interdum orci pellentesque.
           </p>
           <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
             vulputate justo at magna tincidunt, nec interdum eros pulvinar. Nam
             aliquam libero et metus vulputate, id interdum orci pellentesque.
-
             test test test test
           </p>
         </div>
@@ -24,9 +23,8 @@ const Home = () => {
           <img src="../../../images/india-student.png" alt="Description" />
         </div>
       </section>
-
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
