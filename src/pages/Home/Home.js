@@ -13,9 +13,9 @@ const Home = () => {
             aliquam libero et metus vulputate, id interdum orci pellentesque.
           </p>
           <p>
-            Praesent euismod nisi a justo scelerisque, ac tincidunt arcu
-            tincidunt. Suspendisse potenti. Mauris venenatis felis a fermentum
-            interdum.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            vulputate justo at magna tincidunt, nec interdum eros pulvinar. Nam
+            aliquam libero et metus vulputate, id interdum orci pellentesque.
 
             test test test test
           </p>
