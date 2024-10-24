@@ -10,6 +10,9 @@
   align-items: center;
   padding: 1rem 2rem;
   background-color: #fff;
+  position: fixed;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
 .logo img {

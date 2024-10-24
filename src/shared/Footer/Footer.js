@@ -43,11 +43,11 @@ const Footer = () => {
         {/* Contact Section */}
         <div className="footer-section">
           <h3>Contact Us</h3>
-          <p>
+          <span>
             <a href="tel:+919848812855">+91 6302583224</a>
             <br />
             <a href="mailto:info@codevva.com">info@indiastudent.com</a>
-          </p>
+          </span>
         </div>
 
         {/* Social Media Section */}
