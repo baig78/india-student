@@ -62,7 +62,7 @@ const Home = () => {
       >
         <div className="section-why-choose-us">
           <div className="section__head section__head--md text-center">
-            <h2>Why Choose Yo!Coach for your eLearning Marketplace?</h2>
+            <h2>Why Choose India Student</h2>
             <p>
               India Student is an eLearning platform created by a team of experienced experts who are passionate about their work. The team has successfully completed over 1000 projects for clients around the world. With years of experience in the market, India Student offers features designed to help both learners and educators succeed.
             </p>
