@@ -34,6 +34,40 @@ const Home = () => {
       description: 'Become part of a vibrant, global community of learners. Connect, collaborate, and share ideas with fellow students from diverse backgrounds, enhancing your learning experience and expanding your network as you work together on projects and discussions.',
     },
   ];
+
+  const learningCardData = [
+    {
+      image: 'https://fullstacktrainingcenter.com/wp-content/uploads/2024/08/FullStack-Developer-Course-In-Hyderabad.jpeg', // Replace with your image URLs
+      title: 'Title 1',
+      description: 'Description 1',
+    },
+    {
+      image: 'https://fullstacktrainingcenter.com/wp-content/uploads/2024/08/FullStack-Developer-Course-In-Hyderabad.jpeg',
+      title: 'Title 2',
+      description: 'Description 2',
+    },
+    {
+      image: 'https://fullstacktrainingcenter.com/wp-content/uploads/2024/08/FullStack-Developer-Course-In-Hyderabad.jpeg',
+      title: 'Title 3',
+      description: 'Description 3',
+    },
+    {
+      image: 'https://fullstacktrainingcenter.com/wp-content/uploads/2024/08/FullStack-Developer-Course-In-Hyderabad.jpeg',
+      title: 'Title 4',
+      description: 'Description 4',
+    },
+    {
+      image: 'https://fullstacktrainingcenter.com/wp-content/uploads/2024/08/FullStack-Developer-Course-In-Hyderabad.jpeg',
+      title: 'Title 5',
+      description: 'Description 5',
+    },
+    {
+      image: 'https://fullstacktrainingcenter.com/wp-content/uploads/2024/08/FullStack-Developer-Course-In-Hyderabad.jpeg',
+      title: 'Title 6',
+      description: 'Description 6',
+    },
+  ];
+
   return (
     <div>
       <section className="section">
@@ -121,14 +155,38 @@ const Home = () => {
 
 
       <section >
-        <div className="card-header">
+        <div className="learning-card-header">
+          <h2>Online Learning and Consultation</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+          </p>
+
+        </div>
+        <div className="learning-card-section">
+          {learningCardData.map((learningCardData, index) => (
+            <div key={index} className="learning-card">
+              <img src={learningCardData.image} alt={learningCardData.title} className="card-image" />
+              <h3 className="card-title">{learningCardData.title}</h3>
+              <div className="card-overlay">
+                <h3>{learningCardData.title}</h3>
+                <p>{learningCardData.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+
+      </section>
+
+
+      <section >
+        <div className="features-card-header">
           <h2>Features</h2>
 
         </div>
-        <div className="card-section">
+        <div className="features-card-section">
 
           {cardData.map((card, index) => (
-            <div key={index} className="card">
+            <div key={index} className="features-card">
               <div className="icon">{card.icon}</div>
               <h3>{card.title}</h3>
               <p>{card.description}</p>

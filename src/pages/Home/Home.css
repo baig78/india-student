@@ -155,8 +155,8 @@
   }
 }
 
-/* Card Section */
-.card-section {
+/* features-card Section */
+.features-card-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -164,7 +164,7 @@
   padding: 4rem 7rem;
 }
 
-.card {
+.features-card {
   position: relative;
   background: linear-gradient(135deg, #ffffff, #f9f9f9);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -176,7 +176,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card::before {
+.features-card::before {
   content: "";
   position: absolute;
   top: 0;
@@ -187,70 +187,122 @@
   border-radius: 15px 15px 0 0;
 }
 
-.card:hover {
+.features-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
-.card .icon {
+.features-card .icon {
   font-size: 45px;
   color: #5cad34;
   margin-bottom: 15px;
   transition: transform 0.3s ease;
 }
 
-.card:hover .icon {
+.features-card:hover .icon {
   transform: scale(1.1);
 }
 
-.card h3 {
+.features-card h3 {
   font-size: 22px;
   color: #333;
   margin-bottom: 12px;
   font-weight: bold;
 }
 
-.card p {
+.features-card p {
   color: #666;
   font-size: 16px;
   line-height: 1.6;
 }
 
-.card-header {
+.features-card-header {
   padding: 4rem 7rem;
   text-align: center;
 }
 
-.card-header h2{
+.features-card-header h2{
   font-size: 2.6rem;
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .card-section {
+  .features-card-section {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 768px) {
-  .card-section {
+  .features-card-section {
     grid-template-columns: 1fr;
     padding: 2rem 2rem;
   }
 
-  .card {
+  .features-card {
     padding: 20px;
   }
 
-  .card h3 {
+  .features-card h3 {
     font-size: 20px;
   }
 
-  .card p {
+  .features-card p {
     font-size: 15px;
   }
 
-  .card-header{
+  .features-card-header{
     padding: 2rem 7rem;
   }
+}
+
+.learning-card-section {
+  display: flex;
+  flex-wrap: wrap; /* Allows the cards to wrap into multiple rows */
+  justify-content: space-between; /* Adjust spacing between cards */
+  margin: -10px; /* Negative margin to account for padding */
+}
+
+.learning-card {
+  flex: 1 1 calc(33.33% - 20px); /* 3 cards in a row, with space between */
+  margin: 10px; /* Margin around each card */
+  position: relative; /* Required for absolute positioning of overlay */
+  overflow: hidden; /* Prevent overflow from rounded corners */
+}
+
+.card-image {
+  width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.card-title {
+  position: absolute; /* Position the title */
+  bottom: 10px; /* Position near the bottom */
+  left: 10px; /* Adjust as needed */
+  color: white; /* Text color */
+  z-index: 1; /* Ensure title is above the overlay */
+  background-color: rgba(0, 106, 232, 0.8); /* Background color */
+  padding: 10px; /* Padding for the title */
+  border-radius: 8px; /* Optional: rounded corners */
+}
+
+.card-overlay {
+  position: absolute; /* Overlay over the card */
+  top: 0; /* Cover the entire image */
+  left: 0;
+  right: 0;
+  bottom: 0; /* Cover the entire card */
+  background-color: #5cad34; /* Semi-transparent blue */
+  color: white; /* Text color */
+  display: flex; /* Flexbox for centering content */
+  flex-direction: column; /* Stack title and description vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s; /* Fade effect */
+  border-radius: 8px; /* Rounded corners */
+  z-index: 2;
+}
+
+.learning-card:hover .card-overlay {
+  opacity: 1; /* Show on hover */
 }
